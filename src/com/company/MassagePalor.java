@@ -1,9 +1,10 @@
 package com.company;
 
-public class MassagePalor {
-    int age;
-    String service;
-    String name;
+public class MassagePalor extends Business {
+
+    MassagePalor(int myAge) {
+        super(myAge);
+}
     boolean SatisfiesEveryone;
 
     void sayHi() {

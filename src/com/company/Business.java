@@ -1,35 +1,42 @@
 package com.company;
 
 public class Business {
+    private int myAge;
+    private String myName;
 
-    public static void main(String[] args) {
-        MassagePalor Haru = new MassagePalor();
-        Haru.age = 21;
-        Haru.name = "Haru Haru(Day by Day)";
-        Haru.service = "We are a Massage Parlor that satisfies your needs";
-        Haru.SatisfiesEveryone = true;
-
-        Restaurant WN = new Restaurant();
-        WN.age = 20;
-        WN.name = "White Night";
-        WN.Affordablforeveryone = false;
-
-        System.out.println("Introduce yourselves.");
-        System.out.println();
-        Haru.sayHi();
-        System.out.println();
-        WN.sayHi();
-        System.out.println();
-
-        System.out.println("Now what do you do?");
-        System.out.println();
-        Haru.describe();
-        System.out.println();
-        WN.describe();
-        System.out.println();
-
-
-        int totalage = Haru.getAge() * WN.getAge();
-        System.out.println("If you multiply our years together, our Businesses has been running for " + totalage + " years");
+    Business(int age, String name) {
+        myAge = age;
+        myName = name;
     }
+
+    Business(int age) {
+        myAge = age;
+    }
+    Business(String name) {
+        myName = name;
+    }
+
+    int getAge() {
+        return myAge;
+    }
+
+    String getName() {
+        return myName;
+    }
+
+    void sayHi() {
+        if (myName == null) {
+            System.out.println("[GENERIC] Greetings, what is our business called?");
+        } else {
+            System.out.println("[GENERIC] Greetings we are" + myName);
+        }
+
+    }
+
+        void describe() {
+            System.out.println("[GENERIC] Hello, we are a business.");
+            System.out.println("[GENERIC] We're have also been running for " + myAge + " years.");
+        }
+
 }
+
