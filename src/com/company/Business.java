@@ -12,7 +12,7 @@ public class Business {
     Business(int age) {
         myAge = age;
     }
-    Business(String name) {
+    Business(int myAge, String name) {
         myName = name;
     }
 

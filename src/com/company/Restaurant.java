@@ -1,18 +1,14 @@
 package com.company;
 
-public class Restaurant {
-    int age;
-    int item;
-    String name;
+public class Restaurant extends Business {
     boolean Affordablforeveryone;
 
-    void sayHi() {System.out.println("Greetings, this is the White Night.");}
-
-    int getAge() {return age;}
-
+    Restaurant(int myAge, String myName, boolean Affordableforeveryone) {
+        super(myAge, myName, Affordableforeveryone);
+    }
     void describe() {
-        System.out.println("We are a Restaurant that is call White Night");
-        System.out.println("White Night have been running for " + age + " years.");
+        System.out.println("We are a Restaurant that is called " + getName() );
+        System.out.println("White Night have been running for " + getAge() + " years.");
         if (Affordablforeveryone) {
             System.out.println("It is affordable for everyone!");
         } else {

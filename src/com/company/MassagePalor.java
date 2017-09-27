@@ -1,23 +1,15 @@
 package com.company;
 
 public class MassagePalor extends Business {
-
-    MassagePalor(int myAge) {
-        super(myAge);
-}
     boolean SatisfiesEveryone;
 
-    void sayHi() {
-        System.out.println("Hi, we are " + name + " and we will satisfy your needs.");
-    }
-
-    int getAge() {
-        return age;
+    MassagePalor(int myAge, String myName, boolean SatisfiesEveryone) {
+        super(myAge, myName, SatisfiesEveryone);
     }
 
     void describe() {
-        System.out.println("We are a Massage Parlor called " + name + ".");
-        System.out.println("We have been open for " + age + " years.");
+        System.out.println("We are a Massage Parlor called " + getName() + ".");
+        System.out.println("We have been open for " + getAge() + " years.");
         if (SatisfiesEveryone) {
             System.out.println("You will enter a room and leave satisfied guaranteed.");
         } else {

@@ -3,16 +3,8 @@ package com.company;
 public class BusinessSimulator {
 
     public static void main(String[] args) {
-        MassagePalor Haru = new MassagePalor();
-        Haru.age = 21;
-        Haru.name = "Haru Haru(Day by Day)";
-        Haru.service = "We are a Massage Parlor that satisfies your needs";
-        Haru.SatisfiesEveryone = true;
-
-        Restaurant WN = new Restaurant();
-        WN.age = 20;
-        WN.name = "White Night";
-        WN.Affordablforeveryone = false;
+        MassagePalor Haru = new MassagePalor(21, " Haru Haru ", true);
+        Restaurant WN = new Restaurant(20, " White Night ", false);
 
         System.out.println();
         System.out.println("Introduce yourselves.");
