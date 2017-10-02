@@ -12,9 +12,9 @@ public class Business {
     Business(int age) {
         myAge = age;
     }
-    Business(int myAge, String name) {
-        myName = name;
-    }
+    //Business(int myAge, String name) {
+        //myName = name;
+    //}
 
     int getAge() {
         return myAge;

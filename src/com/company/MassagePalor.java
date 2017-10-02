@@ -3,8 +3,9 @@ package com.company;
 public class MassagePalor extends Business {
     boolean SatisfiesEveryone;
 
-    MassagePalor(int myAge, String myName, boolean SatisfiesEveryone) {
-        super(myAge, myName, SatisfiesEveryone);
+    MassagePalor(int myAge, String myName, boolean S) {
+        super(myAge, myName);
+        SatisfiesEveryone = S;
     }
 
     void describe() {
